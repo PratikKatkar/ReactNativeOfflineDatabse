@@ -1,0 +1,77 @@
+import {StyleSheet, Dimensions} from 'react-native';
+export const styles = StyleSheet.create({
+  cardContainer: {
+    flex: 1,
+    margin: 10,
+    padding: 15,
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowRadius: 4,
+    elevation: 5,
+    backgroundColor: '#fff',
+    width: Dimensions.get('window').width / 2 - 50,
+  },
+  name: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 5,
+    color: '#000',
+  },
+  price: {
+    fontSize: 14,
+    color: '#000',
+  },
+  details: {
+    fontSize: 10,
+    color: 'gray',
+    marginBottom: 10,
+  },
+  image: {
+    width: '100%',
+    height: 100,
+    borderRadius: 5,
+    marginVertical: 5,
+    resizeMode: 'contain',
+  },
+  counterContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 0.2,
+    borderColor: 'green',
+    borderRadius: 10,
+  },
+  textDecrement: {
+    paddingHorizontal: 15,
+    fontSize: 15,
+    color: '#fff',
+    borderBottomRightRadius: 10,
+    backgroundColor: 'green',
+    borderRadius: 10,
+    borderTopRightRadius: 0,
+  },
+  mainCount: {
+    fontSize: 15,
+    color: 'green',
+    paddingHorizontal: 5,
+  },
+  textIncrement: {
+    paddingHorizontal: 15,
+    fontSize: 15,
+    color: '#fff',
+    backgroundColor: 'green',
+    borderRadius: 10,
+    borderBottomLeftRadius: 0,
+  },
+  addText: {
+    color: '#fff',
+    backgroundColor: 'green',
+    paddingHorizontal: 30,
+    padding: 3,
+    borderRadius: 10,
+    fontSize: 12,
+  },
+});
